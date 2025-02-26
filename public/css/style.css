@@ -1,0 +1,135 @@
+:root {
+    --whatsapp-green: #25D366;
+    --whatsapp-dark: #075E54;
+    --whatsapp-light: #DCF8C6;
+    --whatsapp-teal: #128C7E;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: #128C7E;
+    border-color: #128C7E;
+}
+
+.btn-primary:hover {
+    background-color: #075E54;
+    border-color: #075E54;
+}
+
+.navbar {
+    background-color: var(--whatsapp-dark) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.nav-link.active {
+    background-color: var(--whatsapp-teal);
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border-radius: 8px;
+        background-color: rgba(0,0,0,0.2);
+    }
+    
+    .navbar-nav {
+        padding: 0.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.75rem 1rem !important;
+    }
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: var(--whatsapp-teal);
+    border-color: var(--whatsapp-teal);
+}
+
+.btn-primary:hover {
+    background-color: var(--whatsapp-dark);
+    border-color: var(--whatsapp-dark);
+}
+
+.stats-card {
+    background: linear-gradient(135deg, var(--whatsapp-teal), var(--whatsapp-dark));
+    color: white;
+}
+
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--whatsapp-dark);
+    color: white;
+}
+
+.sidebar {
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+}
